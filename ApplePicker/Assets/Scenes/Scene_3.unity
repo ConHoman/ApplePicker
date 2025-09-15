@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &577237164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8332589762619999283, guid: 8e7f6d7bb843c2d4f96abf8c61cf1e4e, type: 3}
+  m_PrefabInstance: {fileID: 2696623022196956400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &577237170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577237164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93e45f0082cac24eb0b03d21e3a5707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +249,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -304,6 +322,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac51d5187e0f9eb43b54e57cf60f57e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 577237164}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1001 &1485055827981729586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -311,21 +345,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1485055827009859150, guid: 57e211755f84ba84695477eadbab2387, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 1485055828167037061, guid: 57e211755f84ba84695477eadbab2387, type: 3}
       propertyPath: m_Name
       value: Apple Tree
-      objectReference: {fileID: 0}
-    - target: {fileID: 1485055828167037061, guid: 57e211755f84ba84695477eadbab2387, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1485055828167037066, guid: 57e211755f84ba84695477eadbab2387, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1485055828167037067, guid: 57e211755f84ba84695477eadbab2387, type: 3}
       propertyPath: m_RootOrder
@@ -370,10 +392,6 @@ PrefabInstance:
     - target: {fileID: 1485055828167037067, guid: 57e211755f84ba84695477eadbab2387, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1485055828610122335, guid: 57e211755f84ba84695477eadbab2387, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1672315064790769866, guid: 57e211755f84ba84695477eadbab2387, type: 3}
       propertyPath: applePrefab
@@ -435,10 +453,6 @@ PrefabInstance:
     - target: {fileID: 8332589762619999283, guid: 8e7f6d7bb843c2d4f96abf8c61cf1e4e, type: 3}
       propertyPath: m_Name
       value: Basket
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332589762619999283, guid: 8e7f6d7bb843c2d4f96abf8c61cf1e4e, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7f6d7bb843c2d4f96abf8c61cf1e4e, type: 3}
